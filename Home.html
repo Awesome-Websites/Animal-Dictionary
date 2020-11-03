@@ -15,17 +15,18 @@
 				text-align: center;
 			}
         </style>
-        <script type="text/javascript">
-            var searched = document.getElementById("search").value;
-        </script>
     </head>
 	<body>
         <h1>Welcome</h1>
         <p>Search</p>
         <input name="search" type="text" id="search">
+        <script type="text/javascript">
+            var searched = document.getElementById("search").value;
+            var strSearched = toString(searched);
+        </script>
         <p>
             <script type="text/javascript">
-                document.write(searched);
+                document.write(strSearched);
             </script>
         </p>
         <br>
