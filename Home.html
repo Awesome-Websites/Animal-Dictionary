@@ -10,6 +10,11 @@
                 text-align: left;
                 padding-right: 20px;
             }
+            /* Classes */
+            .bfright {
+                float: right;
+                font-size: 25px;
+            }
 			/* Direct Styling */
 			h1 {
 				text-align: center;
@@ -18,9 +23,9 @@
     </head>
 	<body>
         <h1>Welcome</h1>
-        <p>Search</p>
-        <input name="search" type="text" id="search">
+        <p class="bfright">Search <input name="search" type="text" id="search"></p>
         <script type="text/javascript">
+            document.getElementById("search").value = "Search Here";
             var searched = document.getElementById("search").value;
             var strSearched = toString(searched);
         </script>
