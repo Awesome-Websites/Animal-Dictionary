@@ -26,12 +26,11 @@
         <p class="bfright">Search <input name="search" type="text" id="search"></p>
         <script type="text/javascript">
             document.getElementById("search").value = "Search Here";
-            var searched = document.getElementById("search").value;
-            var strSearched = toString(searched);
+            var searched = toString(document.getElementById("search").value);
         </script>
         <p>
             <script type="text/javascript">
-                document.write(strSearched);
+                document.write(searched);
             </script>
         </p>
         <br>
