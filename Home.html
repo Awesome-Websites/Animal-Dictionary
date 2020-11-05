@@ -15,6 +15,10 @@
                 float: right;
                 font-size: 25px;
             }
+            .bfleft {
+                float: left;
+                font-size: 25px;
+            }
 			/* Direct Styling */
 			h1 {
 				text-align: center;
@@ -23,14 +27,15 @@
     </head>
 	<body>
         <h1>Welcome</h1>
-        <p class="bfright">Search   <input name="search" type="text" id="search" maxlength="15"></p>
+        <input name="search" type="text" id="search" maxlength="15" class="bfright">
+        <br><br><br>
         <script type="text/javascript">
             document.getElementById("search").value = "Search Here";
-            var searched = toString(document.getElementById("search").value);
-            document.write(searched);
+            var searched = document.getElementsByName("search")[0].value;
         </script>
+        <input name="searchbutton" type="submit" id="searchbutton" onclick="window.location.href='.\\Sea_Animals\\Eels.html'" value="Search" class="bfright">
         <br>
-        <div id="contents">
+        <div id="contents" class="bfleft">
             <ol>
                 <li>
                     Sea Animals
