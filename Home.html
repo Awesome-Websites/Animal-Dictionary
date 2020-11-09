@@ -29,11 +29,13 @@
         <h1>Welcome</h1>
         <input name="search" type="text" id="search" maxlength="15" class="bfright">
         <br><br><br>
-        <script type="text/javascript">
-            document.getElementById("search").value = "Search Here";
-            var searched = document.getElementsByName("search")[0].value;
+        <script>
+            function onClicked() {
+                var searched = document.getElementById("search").value;
+                alert(searched);
+            }
         </script>
-        <input name="searchbutton" type="submit" id="searchbutton" onclick="window.location.href='.\\Sea_Animals\\Eels.html'" value="Search" class="bfright">
+        <button onclick="onClicked()" class="bfright">Search</button>
         <br>
         <div id="contents" class="bfleft">
             <ol>
