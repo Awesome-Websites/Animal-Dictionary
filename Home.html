@@ -32,7 +32,12 @@
         <script>
             function onClicked() {
                 var searched = document.getElementById("search").value;
-                window.location.href=".\\Sea_Animals\\" + searched + ".html"
+                try {
+                    window.location.href = ".\\" + toString(searched) + ".html";
+                }
+                catch {
+                    continue;
+                }
             }
         </script>
         <button onclick="onClicked()" class="bfright">Search</button>
@@ -42,7 +47,7 @@
                 <li>
                     Sea Animals
                     <ol>
-                        <li><a href=".\Sea_Animals\Eels.html">Eels</a></li>
+                        <li><a href=".\Eels.html">Eels</a></li>
                     </ol>
                 </li>
             </ol>
