@@ -32,12 +32,13 @@
         <script>
             function onClicked() {
                 var searched = document.getElementById("search").value;
-                try {
-                    window.location.href = ".\\" + toString(searched) + ".html";
-                }
-                catch {
-                    continue;
-                }
+                //try {
+                //    window.location.href = ".\\" + toString(searched) + ".html";
+                //}
+                //catch {
+                //    continue;
+                //}
+                alert(searched)
             }
         </script>
         <button onclick="onClicked()" class="bfright">Search</button>
