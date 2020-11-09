@@ -27,12 +27,12 @@
     </head>
 	<body>
         <h1>Welcome</h1>
-        <input name="search" type="text" id="search" maxlength="15" class="bfright">
+        <input name="search" type="text" id="search" class="bfright">
         <br><br><br>
         <script>
             function onClicked() {
                 var searched = document.getElementById("search").value;
-                alert(searched);
+                window.location.href=".\\Sea_Animals\\" + searched + ".html"
             }
         </script>
         <button onclick="onClicked()" class="bfright">Search</button>
