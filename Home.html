@@ -2,45 +2,13 @@
 <html>
     <head>
         <title>Animal Dictionary | Home</title>
-        <style>
-            /* Ids */
-            #contents {
-                background-color: #00FFFF;
-                float: left;
-                text-align: left;
-                padding-right: 20px;
-            }
-            /* Classes */
-            .bfright {
-                float: right;
-                font-size: 25px;
-            }
-            .bfleft {
-                float: left;
-                font-size: 25px;
-            }
-			/* Direct Styling */
-			h1 {
-				text-align: center;
-			}
-        </style>
+        <link href="hstyle.css" rel="stylesheet">
     </head>
 	<body>
         <h1>Welcome</h1>
         <input name="search" type="text" id="search" class="bfright">
         <br><br><br>
-        <script>
-            function onClicked() {
-                var searched = document.getElementById("search").value;
-                //try {
-                //    window.location.href = ".\\" + toString(searched) + ".html";
-                //}
-                //catch {
-                //    continue;
-                //}
-                alert(searched)
-            }
-        </script>
+        <script src="hscript.js"></script>
         <button onclick="onClicked()" class="bfright">Search</button>
         <br>
         <div id="contents" class="bfleft">
